@@ -3,13 +3,15 @@ package com.nagarro.salesforce.utopia.testcases;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
+import com.nagarro.salesforce.utopia.utility.BrowserFactory;
+
 public class LoginFreeCRM {
 	
 	WebDriver driver;
 	@Test
 	public void appLogin()
 	{
-		driver = com.nagarro.salesforce.utopia.utility.BrowserFactory.startApplication("Chrome", "https://freecrm.com/");
+		driver = BrowserFactory.startApplication(driver, "Chrome", "https://freecrm.com/");
 		System.out.println(driver.getTitle());
 	}
 

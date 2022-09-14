@@ -10,31 +10,30 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class BrowserFactory {
 	
-	public static WebDriver startApplication( String browserName, String appURL)
+	public static WebDriver startApplication(WebDriver driver, String browserName, String appURL)
 	{
-		WebDriver driver = null;
 		if (browserName.equals("Chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 			driver= new ChromeDriver();
 		}
 		
 		else if (browserName.equals("FireFox"))
 		
 		{
-			System.setProperty("webdriver.gecko.driver", "./geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "./drivers/geckodriver.exe");
 			driver= new FirefoxDriver();
 		}
 		
 		else if (browserName.equals("Edge"))
 		{
-			System.setProperty("webdriver.edge.driver", "./msedgedriver.exe");
+			System.setProperty("webdriver.edge.driver", "./drivers/msedgedriver.exe");
 			driver= new EdgeDriver();
 		}
 		
 		else if (browserName.equals("IE"))
 		{
-			System.setProperty("webdriver.ie.driver", "./IEDriverServer.exe");
+			System.setProperty("webdriver.ie.driver", "./drivers/IEDriverServer.exe");
 			driver= new InternetExplorerDriver();
 		}
 		
