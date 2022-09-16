@@ -1,12 +1,10 @@
 package com.nagarro.salesforce.utopia.reports;
 
-import java.lang.module.ModuleDescriptor.Exports;
-
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.LogStatus;
@@ -41,9 +39,5 @@ public class ExtentTest {
 	{
 	report.endTest(test);
 	report.flush();
-	}
-	public void log(LogStatus fail, String string) {
-		// TODO Auto-generated method stub
-		
 	}
 	}
