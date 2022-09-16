@@ -1,25 +1,25 @@
 package com.nagarro.salesforce.utopia.reports;
+
+import java.lang.module.ModuleDescriptor.Exports;
+
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
 import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-public class ExtentReportsCustomization {
-	static com.nagarro.salesforce.utopia.reports.ExtentTest test;
-	static ExtentReportsCustomization report;
+public class ExtentTest {
+	
+	static com.relevantcodes.extentreports.ExtentTest test;
+	static ExtentReports report;
 	@BeforeClass
 	public static void startTest()
 	{
-	report = new ExtentReportsCustomization();
+	report = new ExtentReports(System.getProperty("user.dir")+"ExtentReportResults.html");
 	test = report.startTest("ExtentDemo");
-	}
-	private com.nagarro.salesforce.utopia.reports.ExtentTest startTest(String string) {
-		// TODO Auto-generated method stub
-		return null;
 	}
 	@Test
 	public void extentReportsDemo()
@@ -29,7 +29,7 @@ public class ExtentReportsCustomization {
 	driver.get("https://www.google.co.in");
 	if(driver.getTitle().equals("Google"))
 	{
-	test.log("Navigated to the specified URL");
+	test.log(LogStatus.PASS, "Navigated to the specified URL");
 	}
 	else
 	{
@@ -38,12 +38,12 @@ public class ExtentReportsCustomization {
 	}
 	@AfterClass
 	public static void endTest()
+	{
 	report.endTest(test);
+	report.flush();
 	}
-	private void flush() {
+	public void log(LogStatus fail, String string) {
 		// TODO Auto-generated method stub
 		
 	}
 	}
-
-
