@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  Utopia Test</title>
+<title>TestNG:  Surefire test</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Utopia Test</h2><table border='1' align="center">
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>4/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Sep 16 14:08:31 IST 2022</td>
+<td>Started on:</td><td>Wed Sep 14 23:50:45 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (170 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (183 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -80,8 +80,8 @@ function toggleAllBoxes() {
 <td><div><pre>java.lang.AssertionError: 
 	at com.nagarro.salesforce.utopia.basic.tests.TestCases2.test_case2_method1(TestCases2.java:9)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace443713699", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace443713699'><pre>java.lang.AssertionError: 
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1384454980", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1384454980'><pre>java.lang.AssertionError: 
 	at org.testng.AssertJUnit.fail(AssertJUnit.java:65)
 	at org.testng.AssertJUnit.fail(AssertJUnit.java:70)
 	at com.nagarro.salesforce.utopia.basic.tests.TestCases2.test_case2_method1(TestCases2.java:9)
@@ -110,21 +110,26 @@ function toggleAllBoxes() {
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
 	at org.testng.TestNG.runSuites(TestNG.java:1099)
 	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
 <td>0</td>
-<td>com.nagarro.salesforce.utopia.basic.tests.TestCases2@1046d517</td></tr>
+<td>com.nagarro.salesforce.utopia.basic.tests.TestCases2@1c39680d</td></tr>
 <tr>
-<td title='com.nagarro.salesforce.utopia.basic.tests.TestCases1.test_case_method2()'><b>test_case_method2</b><br>Test class: com.nagarro.salesforce.utopia.basic.tests.TestCases1</td>
+<td title='com.nagarro.salesforce.utopia.basic.tests.TestCases2.test_case2_method2()'><b>test_case2_method2</b><br>Test class: com.nagarro.salesforce.utopia.basic.tests.TestCases2</td>
 <td><div><pre>java.lang.AssertionError: This should be failed: explicit case
-	at com.nagarro.salesforce.utopia.basic.tests.TestCases1.test_case_method2(TestCases1.java:14)
+	at com.nagarro.salesforce.utopia.basic.tests.TestCases2.test_case2_method2(TestCases2.java:13)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace263833514", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace263833514'><pre>java.lang.AssertionError: This should be failed: explicit case
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1569435561", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1569435561'><pre>java.lang.AssertionError: This should be failed: explicit case
 	at org.testng.AssertJUnit.fail(AssertJUnit.java:65)
-	at com.nagarro.salesforce.utopia.basic.tests.TestCases1.test_case_method2(TestCases1.java:14)
+	at com.nagarro.salesforce.utopia.basic.tests.TestCases2.test_case2_method2(TestCases2.java:13)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -150,19 +155,24 @@ function toggleAllBoxes() {
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
 	at org.testng.TestNG.runSuites(TestNG.java:1099)
 	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
 <td>0</td>
-<td>com.nagarro.salesforce.utopia.basic.tests.TestCases1@a4add54</td></tr>
+<td>com.nagarro.salesforce.utopia.basic.tests.TestCases2@1c39680d</td></tr>
 <tr>
 <td title='com.nagarro.salesforce.utopia.basic.tests.TestCases1.test_case_method1()'><b>test_case_method1</b><br>Test class: com.nagarro.salesforce.utopia.basic.tests.TestCases1</td>
 <td><div><pre>java.lang.AssertionError: 
 	at com.nagarro.salesforce.utopia.basic.tests.TestCases1.test_case_method1(TestCases1.java:10)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace632475595", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace632475595'><pre>java.lang.AssertionError: 
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1940055334", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1940055334'><pre>java.lang.AssertionError: 
 	at org.testng.AssertJUnit.fail(AssertJUnit.java:65)
 	at org.testng.AssertJUnit.fail(AssertJUnit.java:70)
 	at com.nagarro.salesforce.utopia.basic.tests.TestCases1.test_case_method1(TestCases1.java:10)
@@ -191,21 +201,26 @@ function toggleAllBoxes() {
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
 	at org.testng.TestNG.runSuites(TestNG.java:1099)
 	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
 <td>0</td>
-<td>com.nagarro.salesforce.utopia.basic.tests.TestCases1@a4add54</td></tr>
+<td>com.nagarro.salesforce.utopia.basic.tests.TestCases1@52815fa3</td></tr>
 <tr>
-<td title='com.nagarro.salesforce.utopia.basic.tests.TestCases2.test_case2_method2()'><b>test_case2_method2</b><br>Test class: com.nagarro.salesforce.utopia.basic.tests.TestCases2</td>
+<td title='com.nagarro.salesforce.utopia.basic.tests.TestCases1.test_case_method2()'><b>test_case_method2</b><br>Test class: com.nagarro.salesforce.utopia.basic.tests.TestCases1</td>
 <td><div><pre>java.lang.AssertionError: This should be failed: explicit case
-	at com.nagarro.salesforce.utopia.basic.tests.TestCases2.test_case2_method2(TestCases2.java:13)
+	at com.nagarro.salesforce.utopia.basic.tests.TestCases1.test_case_method2(TestCases1.java:14)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1260440107", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1260440107'><pre>java.lang.AssertionError: This should be failed: explicit case
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1615617512", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1615617512'><pre>java.lang.AssertionError: This should be failed: explicit case
 	at org.testng.AssertJUnit.fail(AssertJUnit.java:65)
-	at com.nagarro.salesforce.utopia.basic.tests.TestCases2.test_case2_method2(TestCases2.java:13)
+	at com.nagarro.salesforce.utopia.basic.tests.TestCases1.test_case_method2(TestCases1.java:14)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -231,12 +246,17 @@ function toggleAllBoxes() {
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
 	at org.testng.TestNG.runSuites(TestNG.java:1099)
 	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
 <td>0</td>
-<td>com.nagarro.salesforce.utopia.basic.tests.TestCases2@1046d517</td></tr>
+<td>com.nagarro.salesforce.utopia.basic.tests.TestCases1@52815fa3</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -247,25 +267,25 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.nagarro.salesforce.utopia.basic.tests.TestCases2.test_case2_method3()'><b>test_case2_method3</b><br>Test class: com.nagarro.salesforce.utopia.basic.tests.TestCases2</td>
-<td></td>
-<td>0</td>
-<td>com.nagarro.salesforce.utopia.basic.tests.TestCases2@1046d517</td></tr>
-<tr>
 <td title='com.nagarro.salesforce.utopia.basic.tests.TestCases1.test_case_method3()'><b>test_case_method3</b><br>Test class: com.nagarro.salesforce.utopia.basic.tests.TestCases1</td>
 <td></td>
 <td>0</td>
-<td>com.nagarro.salesforce.utopia.basic.tests.TestCases1@a4add54</td></tr>
+<td>com.nagarro.salesforce.utopia.basic.tests.TestCases1@52815fa3</td></tr>
 <tr>
-<td title='com.nagarro.salesforce.utopia.basic.tests.TestCases2.test_case2_method4()'><b>test_case2_method4</b><br>Test class: com.nagarro.salesforce.utopia.basic.tests.TestCases2</td>
+<td title='com.nagarro.salesforce.utopia.basic.tests.TestCases2.test_case2_method3()'><b>test_case2_method3</b><br>Test class: com.nagarro.salesforce.utopia.basic.tests.TestCases2</td>
 <td></td>
 <td>0</td>
-<td>com.nagarro.salesforce.utopia.basic.tests.TestCases2@1046d517</td></tr>
+<td>com.nagarro.salesforce.utopia.basic.tests.TestCases2@1c39680d</td></tr>
 <tr>
 <td title='com.nagarro.salesforce.utopia.basic.tests.TestCases1.test_case_method4()'><b>test_case_method4</b><br>Test class: com.nagarro.salesforce.utopia.basic.tests.TestCases1</td>
 <td></td>
 <td>0</td>
-<td>com.nagarro.salesforce.utopia.basic.tests.TestCases1@a4add54</td></tr>
+<td>com.nagarro.salesforce.utopia.basic.tests.TestCases1@52815fa3</td></tr>
+<tr>
+<td title='com.nagarro.salesforce.utopia.basic.tests.TestCases2.test_case2_method4()'><b>test_case2_method4</b><br>Test class: com.nagarro.salesforce.utopia.basic.tests.TestCases2</td>
+<td></td>
+<td>0</td>
+<td>com.nagarro.salesforce.utopia.basic.tests.TestCases2@1c39680d</td></tr>
 </table><p>
 </body>
 </html>
