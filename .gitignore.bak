@@ -1,3 +1,3 @@
-salesforce/topia/arget/
-salesforce/topia/allure-results/
-salesforce/topia/test-output/
+/utopia/target
+/utopia/allure-results
+/utopia/test-output
