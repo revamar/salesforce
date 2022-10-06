@@ -1,18 +1,21 @@
 package com.nagarro.salesforce.utopia.testcases;
 
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
-import com.nagarro.salesforce.utopia.utility.BrowserFactory;
+import com.nagarro.salesforce.utopia.pages.BaseClass;
+import com.nagarro.salesforce.utopia.pages.LoginPage;
 
-public class LoginFreeCRM {
+public class LoginFreeCRM extends BaseClass{
 	
-	WebDriver driver;
 	@Test
 	public void appLogin()
 	{
-		driver = BrowserFactory.startApplication(driver, "Chrome", "https://freecrm.com/");
-		System.out.println(driver.getTitle());
+		
+		LoginPage loginpage = PageFactory.initElements(driver, LoginPage.class);
+		loginpage.loginToCRM("selenium_50","Abcd@123456");
+		
+		
 	}
 
 }
