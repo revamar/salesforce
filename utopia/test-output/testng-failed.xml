@@ -5,6 +5,7 @@
     <classes>
       <class name="com.nagarro.salesforce.utopia.testcases.LoginFreeCRM">
         <methods>
+          <include name="setUpSuite"/>
           <include name="setup"/>
           <include name="appLogin"/>
           <include name="teardown"/>
