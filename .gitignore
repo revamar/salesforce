@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 /target/
 /allure-results/
 /test-output/
 /.metadata/
+=======
+/utopia/target
+/utopia/allure-results
+/utopia/test-output/*
+>>>>>>> 98a32ca03f44fa70572c132b979bba9fe2a838d6

@@ -1,20 +1,24 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.75 s <<< FAILURE! - in TestSuite
-test_case_method1(com.nagarro.salesforce.utopia.basic.tests.TestCases1)  Time elapsed: 0.085 s  <<< FAILURE!
+Tests run: 9, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.982 s <<< FAILURE! - in TestSuite
+test_case_method1(com.nagarro.salesforce.utopia.basic.tests.TestCases1)  Time elapsed: 0.096 s  <<< FAILURE!
 java.lang.AssertionError: 
 	at com.nagarro.salesforce.utopia.basic.tests.TestCases1.test_case_method1(TestCases1.java:10)
 
-test_case_method2(com.nagarro.salesforce.utopia.basic.tests.TestCases1)  Time elapsed: 0.008 s  <<< FAILURE!
+test_case_method2(com.nagarro.salesforce.utopia.basic.tests.TestCases1)  Time elapsed: 0.004 s  <<< FAILURE!
 java.lang.AssertionError: This should be failed: explicit case
 	at com.nagarro.salesforce.utopia.basic.tests.TestCases1.test_case_method2(TestCases1.java:14)
 
-test_case2_method1(com.nagarro.salesforce.utopia.basic.tests.TestCases2)  Time elapsed: 0.043 s  <<< FAILURE!
+test_case2_method1(com.nagarro.salesforce.utopia.basic.tests.TestCases2)  Time elapsed: 0.004 s  <<< FAILURE!
 java.lang.AssertionError: 
 	at com.nagarro.salesforce.utopia.basic.tests.TestCases2.test_case2_method1(TestCases2.java:9)
 
-test_case2_method2(com.nagarro.salesforce.utopia.basic.tests.TestCases2)  Time elapsed: 0 s  <<< FAILURE!
+test_case2_method2(com.nagarro.salesforce.utopia.basic.tests.TestCases2)  Time elapsed: 0.003 s  <<< FAILURE!
 java.lang.AssertionError: This should be failed: explicit case
 	at com.nagarro.salesforce.utopia.basic.tests.TestCases2.test_case2_method2(TestCases2.java:13)
+
+extentReportsDemo(com.nagarro.salesforce.utopia.reports.ExtentTest)  Time elapsed: 0.033 s  <<< FAILURE!
+java.lang.IllegalStateException: The driver executable must exist: D:\test automation\salesforce\utopia\SubmittalExchange_TFSQAAutomation3rdpartychromechromedriver.exe
+	at com.nagarro.salesforce.utopia.reports.ExtentTest.extentReportsDemo(ExtentTest.java:26)
 

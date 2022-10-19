@@ -3,18 +3,25 @@
 <suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="1" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="com.nagarro.salesforce.utopia.basic.tests.TestCases1">
+      <class name="com.nagarro.salesforce.utopia.reports.ExtentTest">
         <methods>
-          <include name="test_case_method2"/>
-          <include name="test_case_method1"/>
+          <include name="endTest"/>
+          <include name="startTest"/>
+          <include name="extentReportsDemo"/>
         </methods>
-      </class> <!-- com.nagarro.salesforce.utopia.basic.tests.TestCases1 -->
+      </class> <!-- com.nagarro.salesforce.utopia.reports.ExtentTest -->
       <class name="com.nagarro.salesforce.utopia.basic.tests.TestCases2">
         <methods>
           <include name="test_case2_method1"/>
           <include name="test_case2_method2"/>
         </methods>
       </class> <!-- com.nagarro.salesforce.utopia.basic.tests.TestCases2 -->
+      <class name="com.nagarro.salesforce.utopia.basic.tests.TestCases1">
+        <methods>
+          <include name="test_case_method2"/>
+          <include name="test_case_method1"/>
+        </methods>
+      </class> <!-- com.nagarro.salesforce.utopia.basic.tests.TestCases1 -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->
