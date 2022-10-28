@@ -3,6 +3,7 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.nagarro.salesforce.utopia.reports.ExtentTest">
         <methods>
           <include name="endTest"/>
@@ -10,6 +11,16 @@
           <include name="extentReportsDemo"/>
         </methods>
       </class> <!-- com.nagarro.salesforce.utopia.reports.ExtentTest -->
+=======
+      <class name="com.nagarro.salesforce.utopia.testcases.LoginFreeCRM">
+        <methods>
+          <include name="setUpSuite"/>
+          <include name="setup"/>
+          <include name="appLogin"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.nagarro.salesforce.utopia.testcases.LoginFreeCRM -->
+>>>>>>> main
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
