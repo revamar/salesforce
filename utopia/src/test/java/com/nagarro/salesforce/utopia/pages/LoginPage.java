@@ -10,7 +10,7 @@ public class LoginPage {
 	{
 		this.driver=driver;
 	}
-	@FindBy(name="email") WebElement uname;
+	@FindBy(name="email1") WebElement uname;
 	@FindBy(name="password") WebElement pass;
 	@FindBy(xpath="//*[@id=\"ui\"]/div/div/form/div/div[3]") WebElement loginbutton;
 	

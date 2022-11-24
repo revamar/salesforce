@@ -16,7 +16,7 @@ public class LoginFreeCRM extends BaseClass{
 		
 		LoginPage loginpage = PageFactory.initElements(driver, LoginPage.class);
 		loginpage.loginToCRM(excel.getStringData("Login", 0, 0),excel.getStringData("Login", 0, 1));
-		
+	
 		
 	}
 
