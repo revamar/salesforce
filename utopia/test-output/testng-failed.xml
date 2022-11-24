@@ -3,6 +3,15 @@
 <suite name="Failed suite [Shaurya Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
+<<<<<<< HEAD
+      <class name="com.nagarro.salesforce.utopia.reports.ExtentTest">
+        <methods>
+          <include name="endTest"/>
+          <include name="startTest"/>
+          <include name="extentReportsDemo"/>
+        </methods>
+      </class> <!-- com.nagarro.salesforce.utopia.reports.ExtentTest -->
+=======
       <class name="com.nagarro.salesforce.utopia.testcases.LoginFreeCRM">
         <methods>
           <include name="tearDownMeathod"/>
@@ -12,6 +21,7 @@
           <include name="teardown"/>
         </methods>
       </class> <!-- com.nagarro.salesforce.utopia.testcases.LoginFreeCRM -->
+>>>>>>> main
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Shaurya Suite] -->

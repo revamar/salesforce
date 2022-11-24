@@ -3,6 +3,7 @@ package com.nagarro.salesforce.utopia.pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import java.lang.*;
 
 public class LoginPage {
 	WebDriver driver;
